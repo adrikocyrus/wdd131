@@ -1,0 +1,78 @@
+/* layout.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    /* CSS Grid Layout */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background-color: #003366;
+    color: white;
+}
+
+header h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation using Flexbox */
+nav {
+    background-color: #222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+main {
+    grid-area: main;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Aside */
+aside {
+    grid-area: aside;
+    background-color: #dddddd;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
