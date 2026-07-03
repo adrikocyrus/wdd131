@@ -1,17 +1,52 @@
-// getdates.js - Dynamic date functionality for WDD 131
+// ===============================
+// WDD 131 - getdates.js
+// Adriko Cyrus
+// ===============================
 
-// 1. Dynamically output the copyright year (current year)
-// Get the current year using the Date object
-const currentYear = new Date().getFullYear();
+// Display the current year
+const currentYear = document.getElementById("currentyear");
+currentYear.textContent = new Date().getFullYear();
 
-// Find the span element with id "currentyear" and set its text content
-document.getElementById("currentyear").textContent = currentYear;
+// Display the last modified date
+const lastModified = document.getElementById("lastModified");
+lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
-// 2. Dynamically output the document last modified date
-// Use the lastModified property of the document object
-// This returns a string with the date and time the document was last modified
-document.getElementById("lastModified").innerHTML = document.lastModified;
+// Highlight the current navigation link
+const currentPage = window.location.pathname.split("/").pop();
 
-// Optional: Log to console for debugging
-console.log("Current Year:", currentYear);
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (
+        href === currentPage ||
+        (currentPage === "" && href === "index.html")
+    ) {
+        link.style.backgroundColor = "#f39c12";
+        link.style.color = "#000";
+        link.style.fontWeight = "600";
+        link.style.borderRadius = "5px";
+    }
+});
+
+// Fade-in animation for cards
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card, index) => {
+
+    card.style.opacity = "0";
+    card.style.transform = "translateY(20px)";
+    card.style.transition = "all 0.6s ease";
+
+    setTimeout(() => {
+        card.style.opacity = "1";
+        card.style.transform = "translateY(0)";
+    }, index * 250);
+
+});
+
+// Console messages
+console.log("Current Year:", new Date().getFullYear());
 console.log("Last Modified:", document.lastModified);
+console.log("WDD 131 page loaded successfully.");
