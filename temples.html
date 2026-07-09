@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Temple Album</title>
+    
+    <meta name="description" content="A Temple Album page displaying temples from around the world.">
+    <meta name="author" content="Adriko Cyrus">
+    
+    <!-- CSS: Mobile first -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        
+        <button id="menuButton" aria-label="Open Menu">
+            ☰
+        </button>
+        
+        <nav id="navigation">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Temples</h1>
+        
+        <div class="temple-grid">
+            <figure>
+                <img src="images/temple-placeholder.jpeg" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/temple-placeholder.jpeg" alt="Washington D.C. Temple">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/temple-placeholder.jpeg" alt="London England Temple">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/temple-placeholder.jpeg" alt="Rome Italy Temple">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/temple-placeholder.jpeg" alt="Paris France Temple">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/temple-placeholder.jpeg" alt="Tokyo Japan Temple">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/temple-placeholder.jpeg" alt="Sydney Australia Temple">
+                <figcaption>Sydney Australia Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/temple-placeholder.jpeg" alt="Mexico City Mexico Temple">
+                <figcaption>Mexico City Mexico Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/temple-placeholder.jpeg" alt="São Paulo Brazil Temple">
+                <figcaption>São Paulo Brazil Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Adriko Cyrus | Uganda
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

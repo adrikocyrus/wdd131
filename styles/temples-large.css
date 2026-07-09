@@ -1,0 +1,71 @@
+/* Temple Album - Large Screen Styles */
+
+/* ===== TABLET & DESKTOP ===== */
+@media screen and (min-width: 700px) {
+    /* ===== HIDE HAMBURGER BUTTON ===== */
+    #menuButton {
+        display: none !important;
+    }
+
+    /* ===== SHOW NAVIGATION HORIZONTALLY ===== */
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 0;
+    }
+
+    nav a {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        background-color: transparent;
+    }
+
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: none;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    main {
+        max-width: 1200px;
+        padding: 2rem;
+    }
+
+    main h1 {
+        font-size: 2.8rem;
+        margin: 2rem 0;
+    }
+
+    /* ===== TEMPLE GRID (3 columns) ===== */
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    figure img {
+        height: 250px;
+    }
+}
+
+/* ===== TABLET (2 columns) ===== */
+@media screen and (min-width: 480px) and (max-width: 699px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* ===== LARGE DESKTOP ===== */
+@media screen and (min-width: 1400px) {
+    main {
+        max-width: 1400px;
+    }
+    
+    .temple-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+}
