@@ -153,3 +153,8 @@ footer #lastModified {
     font-size: 0.9rem;
     opacity: 0.9;
 }
+.Temple-Album span {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
