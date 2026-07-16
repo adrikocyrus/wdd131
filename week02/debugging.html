@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Activity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 0.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #radius, #area {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Debugging using DevTools</h1>
+    <p>Area of circle with radius <span id="radius"></span>: <span id="area"></span></p>
+
+    <!-- Step: Add script reference to debugging.js with defer -->
+    <script src="scripts/debugging.js" defer></script>
+</body>
+</html>
