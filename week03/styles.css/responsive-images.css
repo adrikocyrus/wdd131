@@ -1,0 +1,32 @@
+/* Responsive Images Activity */
+
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #fafafa;
+}
+
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Hero container */
+
+.hero {
+    max-width: 1500px;
+    margin: 2rem auto;
+    background: #f0f2f5;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive image */
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
