@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo, Japan - WDD131</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Discover Tokyo, Japan - a vibrant metropolis blending ancient traditions with futuristic innovation">
+    <meta name="author" content="WDD131 Student">
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="styles/place.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- HEADER -->
+    <!-- ============================================ -->
+    <header>
+        <h1>Tokyo, Japan</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#weather">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================================ -->
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section id="home" class="hero">
+            <picture>
+                <!-- Mobile: up to 600px -->
+                <source 
+                    media="(max-width: 600px)" 
+                    srcset="images/tokyo-hero-600.webp 600w,
+                            images/tokyo-hero-480.webp 480w"
+                    sizes="100vw">
+                <!-- Tablet: 601px to 1024px -->
+                <source 
+                    media="(max-width: 1024px)" 
+                    srcset="images/tokyo-hero-1024.webp 1024w,
+                            images/tokyo-hero-800.webp 800w"
+                    sizes="100vw">
+                <!-- Desktop: 1025px and up -->
+                <source 
+                    media="(min-width: 1025px)" 
+                    srcset="images/tokyo-hero-1600.webp 1600w,
+                            images/tokyo-hero-1200.webp 1200w"
+                    sizes="100vw">
+                <!-- Fallback image -->
+                <img 
+                    src="images/tokyo-hero-1200.webp" 
+                    alt="Panoramic view of Tokyo cityscape with Mount Fuji in the background" 
+                    loading="eager"
+                    width="1200"
+                    height="600">
+            </picture>
+            <div class="hero-text">
+                <h2>Welcome to Tokyo</h2>
+                <p>Where ancient traditions meet futuristic innovation</p>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section id="about" class="about">
+            <h2>About Tokyo</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Tokyo, Japan's bustling capital, is a dazzling blend of ultramodern and traditional culture. From neon-lit skyscrapers to historic temples, the city offers an unparalleled urban experience that captivates millions of visitors each year.</p>
+                    <p>The Greater Tokyo Area is the most populous metropolitan area in the world, with over 37 million residents. The city is renowned for its efficient public transportation, world-class cuisine, and vibrant pop culture that has influenced the world.</p>
+                    <p>Tokyo will host the 2026 Asian Games, continuing its legacy as a global hub for sports, culture, and innovation.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">37.4M</span>
+                        <span class="stat-label">Population</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2,194</span>
+                        <span class="stat-label">Area (km²)</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">日本語</span>
+                        <span class="stat-label">Official Language</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">¥ JPY</span>
+                        <span class="stat-label">Currency</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ATTRACTIONS SECTION ===== -->
+        <section id="attractions" class="attractions">
+            <h2>Top Attractions</h2>
+            <div class="attraction-grid">
+                <div class="attraction-card">
+                    <img src="images/sensoji-temple.webp" alt="Sensoji Temple in Asakusa with Kaminarimon Gate" loading="lazy" width="400" height="250">
+                    <h3>Sensoji Temple</h3>
+                    <p>Tokyo's oldest temple, located in Asakusa. The iconic Kaminarimon Gate and Nakamise shopping street draw millions of visitors annually.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="images/shibuya-crossing.webp" alt="Shibuya Crossing illuminated at night" loading="lazy" width="400" height="250">
+                    <h3>Shibuya Crossing</h3>
+                    <p>Often called the busiest intersection in the world, this iconic scramble crossing represents the energy and pulse of modern Tokyo.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="images/tokyo-tower.webp" alt="Tokyo Tower against a sunset sky" loading="lazy" width="400" height="250">
+                    <h3>Tokyo Tower</h3>
+                    <p>Standing at 333 meters, this Eiffel Tower-inspired structure offers breathtaking panoramic views of the city skyline.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WEATHER SECTION ===== -->
+        <section id="weather" class="weather">
+            <h2>Weather <span class="weather-icon-wide">⛅</span></h2>
+            <div id="weather-container">
+                <!-- Mobile: SVG Weather Icon -->
+                <div class="weather-icon-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="currentColor">
+                        <path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"/>
+                    </svg>
+                </div>
+                
+                <!-- Weather Data -->
+                <div class="weather-current">
+                    <span id="temperature">22°C</span>
+                    <span id="weather-condition">Partly Cloudy</span>
+                </div>
+                
+                <div class="weather-details">
+                    <p><span class="weather-label">Wind Speed:</span> <span id="wind-speed">15</span> km/h</p>
+                    <p><span class="weather-label">Humidity:</span> <span id="humidity">65</span>%</p>
+                    <p><span class="weather-label">Wind Chill:</span> <span id="wind-chill">N/A</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer>
+        <p>&copy; <span id="year"></span> Tokyo, Japan - WDD131</p>
+        <p>Last Updated: <span id="last-modified"></span></p>
+        <div class="footer-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Instagram">📷</a>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT (defer) -->
+    <!-- ============================================ -->
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
