@@ -108,7 +108,7 @@ function displayWindChill() {
         } else {
             // Conditions not met - display N/A
             windChillElement.textContent = 'N/A';
-            windChillElement.style.color = '#7f8c8d';
+            windChillElement.style.color = '#7f8d8d';
         }
     }
 }
