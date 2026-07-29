@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form - Share your experience with products and help others make informed decisions. Rate products and provide feedback.">
+    <meta name="author" content="Adriko Cyrus">
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js"></script>
 </head>
 <body>
     <header>
@@ -25,24 +28,24 @@
             <div class="form-group">
                 <label>Overall Rating <span class="required">*</span></label>
                 <div class="rating-container" id="ratingContainer">
-                    <label class="rating-option">
-                        <input type="radio" name="rating" value="1" required>
+                    <label class="rating-option" for="rating1">
+                        <input type="radio" id="rating1" name="rating" value="1" required>
                         <span class="star">☆</span>
                     </label>
-                    <label class="rating-option">
-                        <input type="radio" name="rating" value="2" required>
+                    <label class="rating-option" for="rating2">
+                        <input type="radio" id="rating2" name="rating" value="2" required>
                         <span class="star">☆</span>
                     </label>
-                    <label class="rating-option">
-                        <input type="radio" name="rating" value="3" required>
+                    <label class="rating-option" for="rating3">
+                        <input type="radio" id="rating3" name="rating" value="3" required>
                         <span class="star">☆</span>
                     </label>
-                    <label class="rating-option">
-                        <input type="radio" name="rating" value="4" required>
+                    <label class="rating-option" for="rating4">
+                        <input type="radio" id="rating4" name="rating" value="4" required>
                         <span class="star">☆</span>
                     </label>
-                    <label class="rating-option">
-                        <input type="radio" name="rating" value="5" required>
+                    <label class="rating-option" for="rating5">
+                        <input type="radio" id="rating5" name="rating" value="5" required>
                         <span class="star">☆</span>
                     </label>
                 </div>
@@ -58,24 +61,24 @@
             <div class="form-group">
                 <label>Useful Features</label>
                 <div class="checkbox-group">
-                    <label class="checkbox-option">
-                        <input type="checkbox" name="features" value="ease-of-use">
+                    <label class="checkbox-option" for="feature1">
+                        <input type="checkbox" id="feature1" name="features" value="ease-of-use">
                         Ease of Use
                     </label>
-                    <label class="checkbox-option">
-                        <input type="checkbox" name="features" value="performance">
+                    <label class="checkbox-option" for="feature2">
+                        <input type="checkbox" id="feature2" name="features" value="performance">
                         Performance
                     </label>
-                    <label class="checkbox-option">
-                        <input type="checkbox" name="features" value="durability">
+                    <label class="checkbox-option" for="feature3">
+                        <input type="checkbox" id="feature3" name="features" value="durability">
                         Durability
                     </label>
-                    <label class="checkbox-option">
-                        <input type="checkbox" name="features" value="design">
+                    <label class="checkbox-option" for="feature4">
+                        <input type="checkbox" id="feature4" name="features" value="design">
                         Design
                     </label>
-                    <label class="checkbox-option">
-                        <input type="checkbox" name="features" value="value">
+                    <label class="checkbox-option" for="feature5">
+                        <input type="checkbox" id="feature5" name="features" value="value">
                         Value for Money
                     </label>
                 </div>
@@ -101,10 +104,9 @@
     </main>
 
     <footer>
-        <p>&copy;2026, Adriko Cyrus</p>
-        <p><Uganda-kampala</p>
+        <p>&copy; 2026, Adriko Cyrus</p>
+        <p>Uganda - Kampala</p>
     </footer>
 
-    <script src="scripts/form.js"></script>
 </body>
 </html>

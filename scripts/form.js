@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 star.style.color = '#f1c40f';
                 star.style.transform = 'scale(1.2)';
             } else {
-                star.style.color = '#ddd';
+                star.style.color = '#dddddd';
                 star.style.transform = 'scale(1)';
             }
         });
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function resetStars() {
         const stars = document.querySelectorAll('.star');
         stars.forEach(star => {
-            star.style.color = '#ddd';
+            star.style.color = '#dddddd';
             star.style.transform = 'scale(1)';
         });
     }

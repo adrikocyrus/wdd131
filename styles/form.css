@@ -17,7 +17,7 @@ body {
 
 header {
     text-align: center;
-    color: white;
+    color: #ffffff;
     margin-bottom: 30px;
     padding: 20px;
 }
@@ -25,13 +25,13 @@ header {
 header h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 main {
-    background: white;
+    background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     padding: 40px;
     max-width: 700px;
     width: 100%;
@@ -53,7 +53,7 @@ main {
 
 .form-group label {
     font-weight: 600;
-    color: #333;
+    color: #333333;
     font-size: 1rem;
 }
 
@@ -63,7 +63,10 @@ main {
 }
 
 /* Select and Input Styles */
-select, input[type="text"], input[type="date"], textarea {
+select,
+input[type="text"],
+input[type="date"],
+textarea {
     padding: 12px 15px;
     border: 2px solid #e0e0e0;
     border-radius: 10px;
@@ -74,11 +77,13 @@ select, input[type="text"], input[type="date"], textarea {
     font-family: inherit;
 }
 
-select:focus, input:focus, textarea:focus {
+select:focus,
+input:focus,
+textarea:focus {
     outline: none;
     border-color: #667eea;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-    background: white;
+    background: #ffffff;
 }
 
 select {
@@ -130,7 +135,7 @@ textarea {
 
 .star {
     font-size: 2.5rem;
-    color: #ddd;
+    color: #dddddd;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -170,7 +175,7 @@ textarea {
 /* Submit Button */
 .submit-btn {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    color: #ffffff;
     padding: 15px 30px;
     border: none;
     border-radius: 12px;
@@ -204,13 +209,13 @@ textarea {
 }
 
 .confirmation-container h2 {
-    color: #333;
+    color: #333333;
     margin-bottom: 10px;
     font-size: 2rem;
 }
 
 .confirmation-container p {
-    color: #666;
+    color: #666666;
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
@@ -223,7 +228,7 @@ textarea {
 }
 
 .review-counter h3 {
-    color: #555;
+    color: #555555;
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
@@ -232,7 +237,7 @@ textarea {
     font-size: 3.5rem;
     font-weight: 700;
     color: #667eea;
-    background: white;
+    background: #ffffff;
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
@@ -248,13 +253,13 @@ textarea {
 }
 
 .review-summary h3 {
-    color: #555;
+    color: #555555;
     margin-bottom: 15px;
     text-align: center;
 }
 
 #summaryContent {
-    color: #333;
+    color: #333333;
     line-height: 1.8;
 }
 
@@ -265,7 +270,7 @@ textarea {
 .back-btn {
     display: inline-block;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    color: #ffffff;
     padding: 12px 30px;
     border-radius: 12px;
     text-decoration: none;
@@ -282,7 +287,7 @@ textarea {
 /* Footer */
 footer {
     text-align: center;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin-top: auto;
 }
@@ -357,7 +362,9 @@ footer p {
         font-size: 0.9rem;
     }
 
-    select, input, textarea {
+    select,
+    input,
+    textarea {
         font-size: 0.9rem;
         padding: 10px 12px;
     }
@@ -373,7 +380,9 @@ footer p {
 }
 
 /* Keyboard Focus Styles */
-input:focus-visible, select:focus-visible, textarea:focus-visible {
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
     outline: 3px solid #667eea;
     outline-offset: 2px;
 }
