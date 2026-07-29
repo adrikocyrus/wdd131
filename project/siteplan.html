@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan · Local Legends Guide</title>
+
+    <title>Product Review Site Plan | Local Legends Guide</title>
+
+    <meta name="description"
+        content="Product Review Site Plan for Local Legends Guide, a hyperlocal culture map featuring restaurants, hidden gems, events, and personalized recommendations.">
+
+    <meta name="author" content="Adriko Cyrus">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/siteplan.css">
 </head>
@@ -17,318 +28,335 @@
         <!-- ============================================ -->
         <!-- SITE NAME + LOGO                              -->
         <!-- ============================================ -->
-        <header class="site-header">
-            <div class="logo-badge" aria-label="Local Legends logo - map pin with compass">🗺️</div>
+        <header class="site-header" role="banner">
+            <div class="logo-badge" role="img" aria-label="Local Legends logo - map pin with compass">
+                <span aria-hidden="true">🗺️</span>
+            </div>
             <div class="site-name-group">
                 <h1>Local Legends Guide</h1>
                 <span class="domain-tag">locallegends.city</span>
             </div>
         </header>
         
-        <p class="why-name">
-            <strong>Why this name:</strong> "Local Legends" evokes the idea of uncovering hidden gems and iconic local spots that only insiders know about. The name is memorable, aspirational, and suggests a curated, trustworthy guide. It positions the site as the definitive source for authentic local experiences. The logo (a map pin with a compass) reinforces the exploration and discovery theme.
-        </p>
+        <section class="why-name-section" aria-labelledby="why-name-heading">
+            <h2 id="why-name-heading" class="sr-only">Why this name</h2>
+            <p class="why-name">
+                <strong>Why this name:</strong> "Local Legends" evokes the idea of uncovering hidden gems and iconic local spots that only insiders know about. The name is memorable, aspirational, and suggests a curated, trustworthy guide. It positions the site as the definitive source for authentic local experiences. The logo (a map pin with a compass) reinforces the exploration and discovery theme.
+            </p>
+        </section>
 
         <!-- ============================================ -->
         <!-- SITE PURPOSE                                  -->
         <!-- ============================================ -->
-        <h2>📌 Site Purpose</h2>
-        <div class="card">
-            <p class="purpose-intro">The site serves as a hyperlocal culture map that celebrates the unique character of the community by providing:</p>
-            <ul class="purpose-list">
-                <li><strong>Curated hidden gems</strong> – Showcasing 4 must-visit restaurants, cafes, and food trucks with signature dishes, descriptions, and star ratings to help visitors discover authentic local flavors</li>
-                <li><strong>Non-food discoveries</strong> – Highlighting quirky bookstores, scenic parks, vintage arcades, and local theaters that give the area its distinct character</li>
-                <li><strong>Community connection</strong> – Offering a simple events calendar with upcoming local happenings, from farmers markets to live music</li>
-                <li><strong>Personalized recommendations</strong> – Featuring an interactive "Recommendation Quiz" that matches visitors to spots based on their mood (Adventurous, Cozy, or Healthy) using JavaScript logic</li>
-                <li><strong>Visual storytelling</strong> – Creating a visually-driven lifestyle hub with images, cards, and creative typography that celebrates local culture and encourages exploration</li>
-            </ul>
-        </div>
+        <section class="purpose-section" aria-labelledby="purpose-heading">
+            <h2 id="purpose-heading">📌 Site Purpose</h2>
+            <div class="card">
+                <p class="purpose-intro">The site serves as a hyperlocal culture map that celebrates the unique character of the community by providing:</p>
+                <ul class="purpose-list">
+                    <li><strong>Curated hidden gems</strong> – Showcasing 4 must-visit restaurants, cafes, and food trucks with signature dishes, descriptions, and star ratings to help visitors discover authentic local flavors</li>
+                    <li><strong>Non-food discoveries</strong> – Highlighting quirky bookstores, scenic parks, vintage arcades, and local theaters that give the area its distinct character</li>
+                    <li><strong>Community connection</strong> – Offering a simple events calendar with upcoming local happenings, from farmers markets to live music</li>
+                    <li><strong>Personalized recommendations</strong> – Featuring an interactive "Recommendation Quiz" that matches visitors to spots based on their mood (Adventurous, Cozy, or Healthy) using JavaScript logic</li>
+                    <li><strong>Visual storytelling</strong> – Creating a visually-driven lifestyle hub with images, cards, and creative typography that celebrates local culture and encourages exploration</li>
+                </ul>
+            </div>
+        </section>
 
         <!-- ============================================ -->
         <!-- SCENARIOS                                     -->
         <!-- ============================================ -->
-        <h2>🧭 Scenarios (visitor questions)</h2>
-        <ul class="scenario-list">
-            <li>I'm visiting for the weekend — what are the absolute must-try restaurants that locals actually go to?</li>
-            <li>Where can I find a cozy coffee shop with good wifi to work for a few hours?</li>
-            <li>What cool events are happening this week that I can check out?</li>
-            <li>I'm feeling adventurous today — what unique spots should I explore?</li>
-            <li>Where's the best place to take photos for my social media?</li>
-            <li>Are there any family-friendly spots that my kids would enjoy?</li>
-        </ul>
+        <section class="scenarios-section" aria-labelledby="scenarios-heading">
+            <h2 id="scenarios-heading">🧭 Scenarios (visitor questions)</h2>
+            <ul class="scenario-list">
+                <li>I'm visiting for the weekend — what are the absolute must-try restaurants that locals actually go to?</li>
+                <li>Where can I find a cozy coffee shop with good wifi to work for a few hours?</li>
+                <li>What cool events are happening this week that I can check out?</li>
+                <li>I'm feeling adventurous today — what unique spots should I explore?</li>
+                <li>Where's the best place to take photos for my social media?</li>
+                <li>Are there any family-friendly spots that my kids would enjoy?</li>
+            </ul>
+        </section>
 
         <!-- ============================================ -->
         <!-- COLOR SCHEMA                                  -->
         <!-- ============================================ -->
-        <h2>🎨 Color Schema</h2>
-        <div class="color-schema">
-            <div class="color-item">
-                <span class="swatch primary" aria-label="Terracotta color swatch"></span>
-                <span>
-                    <span class="color-label">Warm Terracotta</span>
-                    <span class="color-hex">#c8653a</span>
-                    <span class="color-usage">Primary headings, main buttons, logo background, accent borders</span>
-                </span>
-            </div>
-            <div class="color-item">
-                <span class="swatch secondary" aria-label="Deep Teal color swatch"></span>
-                <span>
-                    <span class="color-label">Deep Teal</span>
-                    <span class="color-hex">#2a5c5a</span>
-                    <span class="color-usage">Secondary headings, navigation background, footer, card titles</span>
-                </span>
-            </div>
-            <div class="color-item">
-                <span class="swatch accent" aria-label="Golden Mustard color swatch"></span>
-                <span>
-                    <span class="color-label">Golden Mustard</span>
-                    <span class="color-hex">#d4a23a</span>
-                    <span class="color-usage">Highlights, badges, star ratings, quiz section, interactive elements</span>
-                </span>
-            </div>
-            <div class="color-item">
-                <span class="swatch neutral" aria-label="Warm Cream color swatch"></span>
-                <span>
-                    <span class="color-label">Warm Cream</span>
-                    <span class="color-hex">#fbf6ed</span>
-                    <span class="color-usage">Page backgrounds, card backgrounds, section dividers, soft accents</span>
-                </span>
-            </div>
-            <div class="color-item">
-                <span class="swatch dark" aria-label="Dark Charcoal color swatch"></span>
-                <span>
-                    <span class="color-label">Dark Charcoal</span>
-                    <span class="color-hex">#2d2a24</span>
-                    <span class="color-usage">Body text, paragraph text, subtle borders</span>
-                </span>
-            </div>
-        </div>
-        
-        <div class="color-application">
-            <h3>Color Application Guide</h3>
-            <div class="color-grid">
-                <div class="color-use">
-                    <div class="color-use-swatch primary-bg"></div>
-                    <div class="color-use-text">
-                        <strong>Terracotta (#c8653a)</strong>
-                        <p>Used for: Main headings (h1, h2), primary buttons, logo background, interactive elements, hover states</p>
-                    </div>
+        <section class="color-schema-section" aria-labelledby="color-heading">
+            <h2 id="color-heading">🎨 Color Schema</h2>
+            <div class="color-schema">
+                <div class="color-item">
+                    <span class="swatch primary" role="img" aria-label="Terracotta color swatch - #c8653a"></span>
+                    <span>
+                        <span class="color-label">Warm Terracotta</span>
+                        <span class="color-hex">#c8653a</span>
+                        <span class="color-usage">Primary headings, main buttons, logo background, accent borders</span>
+                    </span>
                 </div>
-                <div class="color-use">
-                    <div class="color-use-swatch secondary-bg"></div>
-                    <div class="color-use-text">
-                        <strong>Deep Teal (#2a5c5a)</strong>
-                        <p>Used for: Secondary headings (h3, h4), navigation, footer, card titles, accent borders</p>
-                    </div>
+                <div class="color-item">
+                    <span class="swatch secondary" role="img" aria-label="Deep Teal color swatch - #2a5c5a"></span>
+                    <span>
+                        <span class="color-label">Deep Teal</span>
+                        <span class="color-hex">#2a5c5a</span>
+                        <span class="color-usage">Secondary headings, navigation background, footer, card titles</span>
+                    </span>
                 </div>
-                <div class="color-use">
-                    <div class="color-use-swatch accent-bg"></div>
-                    <div class="color-use-text">
-                        <strong>Golden Mustard (#d4a23a)</strong>
-                        <p>Used for: Star ratings, badges, quiz section, call-to-action highlights, event tags</p>
-                    </div>
+                <div class="color-item">
+                    <span class="swatch accent" role="img" aria-label="Golden Mustard color swatch - #d4a23a"></span>
+                    <span>
+                        <span class="color-label">Golden Mustard</span>
+                        <span class="color-hex">#d4a23a</span>
+                        <span class="color-usage">Highlights, badges, star ratings, quiz section, interactive elements</span>
+                    </span>
                 </div>
-                <div class="color-use">
-                    <div class="color-use-swatch neutral-bg"></div>
-                    <div class="color-use-text">
-                        <strong>Warm Cream (#fbf6ed)</strong>
-                        <p>Used for: Page background, card backgrounds, section dividers, soft contrast areas</p>
-                    </div>
+                <div class="color-item">
+                    <span class="swatch neutral" role="img" aria-label="Warm Cream color swatch - #fbf6ed"></span>
+                    <span>
+                        <span class="color-label">Warm Cream</span>
+                        <span class="color-hex">#fbf6ed</span>
+                        <span class="color-usage">Page backgrounds, card backgrounds, section dividers, soft accents</span>
+                    </span>
                 </div>
-                <div class="color-use">
-                    <div class="color-use-swatch dark-bg"></div>
-                    <div class="color-use-text">
-                        <strong>Dark Charcoal (#2d2a24)</strong>
-                        <p>Used for: Body text, paragraph text, labels, footer text, subtle borders</p>
-                    </div>
+                <div class="color-item">
+                    <span class="swatch dark" role="img" aria-label="Dark Charcoal color swatch - #2d2a24"></span>
+                    <span>
+                        <span class="color-label">Dark Charcoal</span>
+                        <span class="color-hex">#2d2a24</span>
+                        <span class="color-usage">Body text, paragraph text, subtle borders</span>
+                    </span>
                 </div>
             </div>
-        </div>
+            
+            <div class="color-application">
+                <h3>Color Application Guide</h3>
+                <div class="color-grid">
+                    <div class="color-use">
+                        <div class="color-use-swatch primary-bg" role="img" aria-label="Terracotta color swatch"></div>
+                        <div class="color-use-text">
+                            <strong>Terracotta (#c8653a)</strong>
+                            <p>Used for: Main headings (h1, h2), primary buttons, logo background, interactive elements, hover states</p>
+                        </div>
+                    </div>
+                    <div class="color-use">
+                        <div class="color-use-swatch secondary-bg" role="img" aria-label="Deep Teal color swatch"></div>
+                        <div class="color-use-text">
+                            <strong>Deep Teal (#2a5c5a)</strong>
+                            <p>Used for: Secondary headings (h3, h4), navigation, footer, card titles, accent borders</p>
+                        </div>
+                    </div>
+                    <div class="color-use">
+                        <div class="color-use-swatch accent-bg" role="img" aria-label="Golden Mustard color swatch"></div>
+                        <div class="color-use-text">
+                            <strong>Golden Mustard (#d4a23a)</strong>
+                            <p>Used for: Star ratings, badges, quiz section, call-to-action highlights, event tags</p>
+                        </div>
+                    </div>
+                    <div class="color-use">
+                        <div class="color-use-swatch neutral-bg" role="img" aria-label="Warm Cream color swatch"></div>
+                        <div class="color-use-text">
+                            <strong>Warm Cream (#fbf6ed)</strong>
+                            <p>Used for: Page background, card backgrounds, section dividers, soft contrast areas</p>
+                        </div>
+                    </div>
+                    <div class="color-use">
+                        <div class="color-use-swatch dark-bg" role="img" aria-label="Dark Charcoal color swatch"></div>
+                        <div class="color-use-text">
+                            <strong>Dark Charcoal (#2d2a24)</strong>
+                            <p>Used for: Body text, paragraph text, labels, footer text, subtle borders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <p class="color-applied"><strong>✅ Color schema applied:</strong> This document uses <span class="color-demo primary-demo">Terracotta #c8653a</span> for all headings and borders, <span class="color-demo secondary-demo">Teal #2a5c5a</span> for secondary elements, <span class="color-demo accent-demo">Mustard #d4a23a</span> for highlights, <span class="color-demo neutral-demo">Cream #fbf6ed</span> for backgrounds, and <span class="color-demo dark-demo">Charcoal #2d2a24</span> for text.</p>
+            <p class="color-applied"><strong>✅ Color schema applied:</strong> This document uses <span class="color-demo primary-demo">Terracotta #c8653a</span> for all headings and borders, <span class="color-demo secondary-demo">Teal #2a5c5a</span> for secondary elements, <span class="color-demo accent-demo">Mustard #d4a23a</span> for highlights, <span class="color-demo neutral-demo">Cream #fbf6ed</span> for backgrounds, and <span class="color-demo dark-demo">Charcoal #2d2a24</span> for text.</p>
+        </section>
 
         <!-- ============================================ -->
         <!-- TYPOGRAPHY                                    -->
         <!-- ============================================ -->
-        <h2>🔤 Typography</h2>
-        <div class="typography-box">
-            <div class="typography-item">
-                <p class="font-heading-sample">Playfair Display (Headings &amp; Hero)</p>
-                <p class="font-heading-desc"><strong>Usage:</strong> All major headings (h1, h2, h3, h4), hero section titles, logo text, and featured spot titles. This serif font adds an editorial, sophisticated feel that matches the "local legends" premium brand identity.</p>
-                <p class="font-heading-weights">Weights: 700 (bold), 900 (black), 700 italic</p>
+        <section class="typography-section" aria-labelledby="typography-heading">
+            <h2 id="typography-heading">🔤 Typography</h2>
+            <div class="typography-box">
+                <div class="typography-item">
+                    <p class="font-heading-sample">Playfair Display (Headings &amp; Hero)</p>
+                    <p class="font-heading-desc"><strong>Usage:</strong> All major headings (h1, h2, h3, h4), hero section titles, logo text, and featured spot titles. This serif font adds an editorial, sophisticated feel that matches the "local legends" premium brand identity.</p>
+                    <p class="font-heading-weights">Weights: 700 (bold), 900 (black), 700 italic</p>
+                </div>
+                
+                <div class="typography-item">
+                    <p class="font-body-sample">Inter (Body Text &amp; UI Elements)</p>
+                    <p class="font-body-desc"><strong>Usage:</strong> All body paragraphs, navigation menus, card descriptions, button text, event listings, quiz interface, and footer content. This clean sans-serif font ensures excellent readability across all devices.</p>
+                    <p class="font-body-weights">Weights: 400 (regular), 500 (medium), 600 (semi-bold), 700 (bold), 800 (extra-bold)</p>
+                </div>
+                
+                <div class="typography-item">
+                    <p class="font-italic-sample">Italic style for quotes &amp; special callouts</p>
+                    <p class="font-italic-desc"><strong>Usage:</strong> Testimonials, featured quotes, special announcements, and highlighted recommendations.</p>
+                </div>
+                
+                <div class="typography-summary">
+                    <p><strong>📝 Summary:</strong> The combination of Playfair Display (serif) for headings and Inter (sans-serif) for body text creates a sophisticated editorial feel that's perfect for a lifestyle/culture guide. This pairing is both modern and timeless, establishing the site as a trusted, premium local resource.</p>
+                </div>
             </div>
-            
-            <div class="typography-item">
-                <p class="font-body-sample">Inter (Body Text &amp; UI Elements)</p>
-                <p class="font-body-desc"><strong>Usage:</strong> All body paragraphs, navigation menus, card descriptions, button text, event listings, quiz interface, and footer content. This clean sans-serif font ensures excellent readability across all devices.</p>
-                <p class="font-body-weights">Weights: 400 (regular), 500 (medium), 600 (semi-bold), 700 (bold), 800 (extra-bold)</p>
-            </div>
-            
-            <div class="typography-item">
-                <p class="font-italic-sample">Italic style for quotes &amp; special callouts</p>
-                <p class="font-italic-desc"><strong>Usage:</strong> Testimonials, featured quotes, special announcements, and highlighted recommendations.</p>
-            </div>
-            
-            <div class="typography-summary">
-                <p><strong>📝 Summary:</strong> The combination of Playfair Display (serif) for headings and Inter (sans-serif) for body text creates a sophisticated editorial feel that's perfect for a lifestyle/culture guide. This pairing is both modern and timeless, establishing the site as a trusted, premium local resource.</p>
-            </div>
-        </div>
+        </section>
 
         <!-- ============================================ -->
         <!-- TYPOGRAPHY APPLICATION ON THIS DOCUMENT      -->
         <!-- ============================================ -->
-        <h2>📝 Typography Applied</h2>
-        <div class="typography-applied">
-            <div class="typography-demo">
-                <h4>This heading uses Playfair Display</h4>
-                <p>This paragraph uses Inter (regular weight). The body text is clean and highly readable, making it perfect for longer content like descriptions and articles.</p>
-                <p><strong>This bold text</strong> uses Inter semi-bold (600) for emphasis. <span class="highlight-demo">This highlighted text</span> uses Inter medium (500).</p>
-                <p class="italic-demo">This italic text uses Playfair Display italic for special callouts and quotes.</p>
-                <p class="font-usage-apply"><strong>✅ Typography applied:</strong> All headings on this document use Playfair Display. All body text, lists, and descriptions use Inter. The fonts are loaded from Google Fonts and properly applied throughout.</p>
+        <section class="typography-applied-section" aria-labelledby="typography-applied-heading">
+            <h2 id="typography-applied-heading">📝 Typography Applied</h2>
+            <div class="typography-applied">
+                <div class="typography-demo">
+                    <h3>This heading uses Playfair Display</h3>
+                    <p>This paragraph uses Inter (regular weight). The body text is clean and highly readable, making it perfect for longer content like descriptions and articles.</p>
+                    <p><strong>This bold text</strong> uses Inter semi-bold (600) for emphasis. <span class="highlight-demo">This highlighted text</span> uses Inter medium (500).</p>
+                    <p class="italic-demo">This italic text uses Playfair Display italic for special callouts and quotes.</p>
+                    <p class="font-usage-apply"><strong>✅ Typography applied:</strong> All headings on this document use Playfair Display. All body text, lists, and descriptions use Inter. The fonts are loaded from Google Fonts and properly applied throughout.</p>
+                </div>
             </div>
-        </div>
+        </section>
 
         <!-- ============================================ -->
         <!-- WIREFRAMES                                    -->
         <!-- ============================================ -->
-        <h2>📐 Wireframes (Home Page)</h2>
-        <p class="wireframe-intro">The following wireframes show the proposed layout for the home page. Each section is labeled to show content placement and visual hierarchy.</p>
-        
-        <div class="wireframe-grid">
-            <!-- MOBILE WIREFRAME -->
-            <div class="wireframe-card">
-                <h3>📱 Mobile View (320px - 768px)</h3>
-                <div class="wf-container">
-                    <div class="wf-mobile">
-                        <!-- Header -->
-                        <div class="wf-header">🗺️ Local Legends</div>
-                        
-                        <!-- Hero Section -->
-                        <div class="wf-hero">
-                            <span>Hero: Stylized Map Graphic</span>
-                            <span class="wf-hero-sub">"Featured Spot of the Week"</span>
-                        </div>
-                        
-                        <!-- Quiz Section -->
-                        <div class="wf-quiz">✨ Feeling Adventurous, Cozy, or Healthy? Take the Quiz!</div>
-                        
-                        <!-- Featured Spot -->
-                        <div class="wf-section-title">Featured Spot of the Week</div>
-                        <div class="wf-spot">
-                            <div class="wf-spot-image"></div>
-                            <div class="wf-spot-text">
-                                <div class="wf-spot-name"></div>
-                                <div class="wf-spot-rating">⭐⭐⭐⭐⭐</div>
-                                <div class="wf-spot-desc"></div>
+        <section class="wireframes-section" aria-labelledby="wireframes-heading">
+            <h2 id="wireframes-heading">📐 Wireframes (Home Page)</h2>
+            <p class="wireframe-intro">The following wireframes show the proposed layout for the home page. Each section is labeled to show content placement and visual hierarchy.</p>
+            
+            <div class="wireframe-grid">
+                <!-- MOBILE WIREFRAME -->
+                <div class="wireframe-card">
+                    <h3>📱 Mobile View (320px - 768px)</h3>
+                    <div class="wf-container">
+                        <div class="wf-mobile">
+                            <!-- Header -->
+                            <div class="wf-header" role="img" aria-label="Local Legends logo">🗺️ Local Legends</div>
+                            
+                            <!-- Hero Section -->
+                            <div class="wf-hero">
+                                <span>Hero: Stylized Map Graphic</span>
+                                <span class="wf-hero-sub">"Featured Spot of the Week"</span>
                             </div>
+                            
+                            <!-- Quiz Section -->
+                            <div class="wf-quiz">✨ Feeling Adventurous, Cozy, or Healthy? Take the Quiz!</div>
+                            
+                            <!-- Featured Spot -->
+                            <div class="wf-section-title">Featured Spot of the Week</div>
+                            <div class="wf-spot">
+                                <div class="wf-spot-image" role="img" aria-label="Featured spot image placeholder"></div>
+                                <div class="wf-spot-text">
+                                    <div class="wf-spot-name"></div>
+                                    <div class="wf-spot-rating" role="img" aria-label="5 star rating">⭐⭐⭐⭐⭐</div>
+                                    <div class="wf-spot-desc"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Quick Picks -->
+                            <div class="wf-section-title">Quick Picks</div>
+                            <div class="wf-grid-2">
+                                <div class="wf-grid-item">Eats</div>
+                                <div class="wf-grid-item">Spots</div>
+                            </div>
+                            <div class="wf-grid-2">
+                                <div class="wf-grid-item">Events</div>
+                                <div class="wf-grid-item">Quiz</div>
+                            </div>
+                            
+                            <!-- Footer -->
+                            <div class="wf-footer"></div>
+                            
+                            <!-- Labels -->
+                            <div class="wf-label">📱 Mobile: Stacked layout with header · hero map · quiz · featured spot · quick picks · footer</div>
                         </div>
-                        
-                        <!-- Quick Picks -->
-                        <div class="wf-section-title">Quick Picks</div>
-                        <div class="wf-grid-2">
-                            <div class="wf-grid-item">Eats</div>
-                            <div class="wf-grid-item">Spots</div>
+                    </div>
+                </div>
+
+                <!-- DESKTOP WIREFRAME -->
+                <div class="wireframe-card">
+                    <h3>🖥️ Desktop View (769px+)</h3>
+                    <div class="wf-container">
+                        <div class="wf-desktop">
+                            <!-- Navigation -->
+                            <div class="wf-top">
+                                <div class="wf-logo" role="img" aria-label="Local Legends logo">🗺️ Local Legends</div>
+                                <nav class="wf-nav" aria-label="Main navigation">
+                                    <span>Home</span>
+                                    <span>Eats &amp; Treats</span>
+                                    <span>Hidden Spots</span>
+                                    <span>Events</span>
+                                    <span>Quiz</span>
+                                </nav>
+                            </div>
+                            
+                            <!-- Hero Section with Map -->
+                            <div class="wf-hero">
+                                <div class="wf-hero-content">
+                                    <div class="wf-hero-map" role="img" aria-label="Interactive map graphic">
+                                        <span aria-hidden="true">🗺️</span>
+                                        <span>Interactive Map Graphic</span>
+                                    </div>
+                                    <div class="wf-hero-featured">
+                                        <span>⭐ Featured Spot</span>
+                                        <span class="wf-hero-featured-name">The Local Diner</span>
+                                        <span class="wf-hero-featured-desc">"Best burger in town!"</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Quiz Bar -->
+                            <div class="wf-quiz-bar">✨ Feeling Adventurous, Cozy, or Healthy? Take the Quiz!</div>
+                            
+                            <!-- Three Category Cards -->
+                            <div class="wf-grid-3">
+                                <div class="wf-card">
+                                    <div class="wf-card-image" role="img" aria-label="Food icon">🍽️</div>
+                                    <div class="wf-card-title">Eats &amp; Treats</div>
+                                    <div class="wf-card-desc">4 must-visit local restaurants</div>
+                                    <div class="wf-card-stars" role="img" aria-label="4.5 star rating">⭐⭐⭐⭐½</div>
+                                </div>
+                                <div class="wf-card">
+                                    <div class="wf-card-image" role="img" aria-label="Book icon">📚</div>
+                                    <div class="wf-card-title">Hidden Spots</div>
+                                    <div class="wf-card-desc">Bookstores, parks, arcades</div>
+                                    <div class="wf-card-stars" role="img" aria-label="5 star rating">⭐⭐⭐⭐⭐</div>
+                                </div>
+                                <div class="wf-card">
+                                    <div class="wf-card-image" role="img" aria-label="Calendar icon">📅</div>
+                                    <div class="wf-card-title">Events</div>
+                                    <div class="wf-card-desc">Upcoming local happenings</div>
+                                    <div class="wf-card-stars" role="img" aria-label="3 star rating">⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Footer -->
+                            <div class="wf-footer"></div>
+                            
+                            <!-- Labels -->
+                            <div class="wf-label">🖥️ Desktop: Wide layout with nav · hero (map + featured) · quiz bar · 3 category cards · footer</div>
                         </div>
-                        <div class="wf-grid-2">
-                            <div class="wf-grid-item">Events</div>
-                            <div class="wf-grid-item">Quiz</div>
-                        </div>
-                        
-                        <!-- Footer -->
-                        <div class="wf-footer"></div>
-                        
-                        <!-- Labels -->
-                        <div class="wf-label">📱 Mobile: Stacked layout with header · hero map · quiz · featured spot · quick picks · footer</div>
                     </div>
                 </div>
             </div>
 
-            <!-- DESKTOP WIREFRAME -->
-            <div class="wireframe-card">
-                <h3>🖥️ Desktop View (769px+)</h3>
-                <div class="wf-container">
-                    <div class="wf-desktop">
-                        <!-- Navigation -->
-                        <div class="wf-top">
-                            <div class="wf-logo">🗺️ Local Legends</div>
-                            <div class="wf-nav">
-                                <span>Home</span>
-                                <span>Eats &amp; Treats</span>
-                                <span>Hidden Spots</span>
-                                <span>Events</span>
-                                <span>Quiz</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Hero Section with Map -->
-                        <div class="wf-hero">
-                            <div class="wf-hero-content">
-                                <div class="wf-hero-map">
-                                    <span>🗺️</span>
-                                    <span>Interactive Map Graphic</span>
-                                </div>
-                                <div class="wf-hero-featured">
-                                    <span>⭐ Featured Spot</span>
-                                    <span class="wf-hero-featured-name">The Local Diner</span>
-                                    <span class="wf-hero-featured-desc">"Best burger in town!"</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Quiz Bar -->
-                        <div class="wf-quiz-bar">✨ Feeling Adventurous, Cozy, or Healthy? Take the Quiz!</div>
-                        
-                        <!-- Three Category Cards -->
-                        <div class="wf-grid-3">
-                            <div class="wf-card">
-                                <div class="wf-card-image">🍽️</div>
-                                <div class="wf-card-title">Eats &amp; Treats</div>
-                                <div class="wf-card-desc">4 must-visit local restaurants</div>
-                                <div class="wf-card-stars">⭐⭐⭐⭐½</div>
-                            </div>
-                            <div class="wf-card">
-                                <div class="wf-card-image">📚</div>
-                                <div class="wf-card-title">Hidden Spots</div>
-                                <div class="wf-card-desc">Bookstores, parks, arcades</div>
-                                <div class="wf-card-stars">⭐⭐⭐⭐⭐</div>
-                            </div>
-                            <div class="wf-card">
-                                <div class="wf-card-image">📅</div>
-                                <div class="wf-card-title">Events</div>
-                                <div class="wf-card-desc">Upcoming local happenings</div>
-                                <div class="wf-card-stars">⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Footer -->
-                        <div class="wf-footer"></div>
-                        
-                        <!-- Labels -->
-                        <div class="wf-label">🖥️ Desktop: Wide layout with nav · hero (map + featured) · quiz bar · 3 category cards · footer</div>
-                    </div>
-                </div>
+            <div class="wireframe-notes">
+                <h3>Wireframe Key Elements</h3>
+                <ul class="wireframe-key">
+                    <li><strong>Header/Logo:</strong> Brand identity with site name and logo</li>
+                    <li><strong>Navigation:</strong> Primary navigation for all pages</li>
+                    <li><strong>Hero Section:</strong> Stylized map graphic with "Featured Spot of the Week"</li>
+                    <li><strong>Quiz Bar:</strong> Interactive recommendation quiz (JavaScript driven)</li>
+                    <li><strong>Featured Spot:</strong> Highlighted local gem with photo, name, rating, and description</li>
+                    <li><strong>Category Cards:</strong> Quick links to Eats, Hidden Spots, and Events pages</li>
+                    <li><strong>Footer:</strong> Navigation, contact, social links, copyright</li>
+                </ul>
+                <p class="wireframe-note"><strong>💡 Note:</strong> Mobile layout stacks content vertically for easy scrolling. Desktop layout uses a grid system with the hero section spanning full width, followed by a 3-column card layout.</p>
             </div>
-        </div>
-
-        <div class="wireframe-notes">
-            <h3>Wireframe Key Elements</h3>
-            <ul class="wireframe-key">
-                <li><strong>Header/Logo:</strong> Brand identity with site name and logo</li>
-                <li><strong>Navigation:</strong> Primary navigation for all pages</li>
-                <li><strong>Hero Section:</strong> Stylized map graphic with "Featured Spot of the Week"</li>
-                <li><strong>Quiz Bar:</strong> Interactive recommendation quiz (JavaScript driven)</li>
-                <li><strong>Featured Spot:</strong> Highlighted local gem with photo, name, rating, and description</li>
-                <li><strong>Category Cards:</strong> Quick links to Eats, Hidden Spots, and Events pages</li>
-                <li><strong>Footer:</strong> Navigation, contact, social links, copyright</li>
-            </ul>
-            <p class="wireframe-note"><strong>💡 Note:</strong> Mobile layout stacks content vertically for easy scrolling. Desktop layout uses a grid system with the hero section spanning full width, followed by a 3-column card layout.</p>
-        </div>
+        </section>
 
         <!-- ============================================ -->
         <!-- FOOTER                                        -->
         <!-- ============================================ -->
         <hr>
-        <footer class="page-footer">
+        <footer class="page-footer" role="contentinfo">
             <span>📍 Local Legends Guide · Site Plan</span>
             <span>📅 2026 · WDD 131 · Project 1</span>
             <span>🏆 Created for: Hyperlocal Culture Map</span>
