@@ -2,28 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Product Review Confirmation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review confirmation page - Your product review has been submitted successfully. View your review summary.">
     <meta name="author" content="Adriko Cyrus">
-    <title>Review Submitted</title>
+    <title>Review Submitted - Product Review</title>
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/confirmation.js" defer></script>
+     <script src="scripts/confirmation.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Review Submitted Successfully</h1>
+        <h1>Review Submitted Successfully!</h1>
     </header>
+
     <main>
         <div class="confirmation-container">
-            <div class="thank-you-icon">✓</div>
-            <h2>Thank you for your review!</h2>
-            <p>Reviews submitted: <span id="reviewCounter"></span></p>
-            <div id="summaryContent" class="summary-content"></div>
+            <div class="confirmation-icon">&#10004;</div>
+            <h2>Thank You for Your Review</h2>
+            <p>Your feedback helps us improve our products.</p>
+            
+            <div class="review-counter">
+                <h3>Total Reviews Submitted</h3>
+                <div class="counter-display" id="reviewCounter">0</div>
+            </div>
+
+            <div class="review-summary" id="reviewSummary">
+                <h3>Your Review Summary</h3>
+                <div id="summaryContent"></div>
+            </div>
+
             <a href="form.html" class="back-btn">Submit Another Review</a>
         </div>
     </main>
+
     <footer>
-        <p>&copy; 2026 Adriko Cyrus</p>
+        <p>&copy; 2026, Adriko Cyrus</p>
+        <p>Uganda - Kampala</p>
     </footer>
 </body>
 </html>
