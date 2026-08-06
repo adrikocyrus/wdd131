@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Legends Guide · Entebbe, Uganda</title>
+  <meta name="description" content="Local Legends Guide – hidden gems, restaurants, events, and personalized recommendations for Entebbe, Uganda." />
+  <meta name="author" content="Adriko Cyrus" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/local-legend.css" />
+</head>
+<body>
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <div class="logo-badge" role="img" aria-label="Local Legends logo - map pin with compass">
+        <span aria-hidden="true">🗺️</span>
+        <span class="logo-text">Local Legends</span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="local-legend.html" class="active">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 id="hero-heading">Entebbe,<br />uncovered.</h1>
+          <p class="hero-sub">Hidden gems, local flavors, and the stories behind them.</p>
+          <a href="discover.html" class="btn btn-primary">Explore the map</a>
+        </div>
+        <div class="hero-map" role="img" aria-label="Stylized map of Entebbe with pins">
+          <span aria-hidden="true">📍</span>
+          <span class="hero-map-label">interactive map</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUIZ SECTION (dynamic) ===== -->
+    <section class="quiz-section container" aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">✨ What's your vibe today?</h2>
+      <p class="quiz-tagline">Take the 2‑question quiz and get a personalized Entebbe recommendation.</p>
+
+      <div class="quiz-card" id="quizCard">
+        <form id="quizForm">
+          <fieldset>
+            <legend>Step 1: How do you feel?</legend>
+            <label><input type="radio" name="mood" value="adventurous" checked /> 🧭 Adventurous</label>
+            <label><input type="radio" name="mood" value="cozy" /> ☕ Cozy</label>
+            <label><input type="radio" name="mood" value="healthy" /> 🌿 Healthy</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Step 2: What's your setting?</legend>
+            <label><input type="radio" name="setting" value="indoor" checked /> 🏠 Indoor</label>
+            <label><input type="radio" name="setting" value="outdoor" /> 🌳 Outdoor</label>
+          </fieldset>
+
+          <button type="submit" class="btn btn-accent">✨ Recommend me</button>
+        </form>
+
+        <div id="quizResult" class="quiz-result hidden" role="status">
+          <p id="resultMessage"></p>
+          <button id="resetQuiz" class="btn btn-secondary">Try again</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED SPOT ===== -->
+    <section class="featured container" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">⭐ Featured Spot of the Week</h2>
+      <div class="featured-card">
+        <div class="featured-image" role="img" aria-label="Entebbe Botanic Gardens">
+          <span aria-hidden="true">🌴</span>
+        </div>
+        <div class="featured-info">
+          <h3>Entebbe Botanic Gardens</h3>
+          <div class="stars" role="img" aria-label="5 star rating">⭐⭐⭐⭐⭐</div>
+          <p class="featured-desc">Lush lakeside gardens with centuries‑old trees, monkeys, and stunning views of Lake Victoria.</p>
+          <span class="tag">🥇 local legend</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUICK PICKS (grid) ===== -->
+    <section class="quick-picks container" aria-labelledby="quick-heading">
+      <h2 id="quick-heading">📌 Quick picks</h2>
+      <div class="quick-grid">
+        <a href="discover.html#eats" class="quick-card">
+          <span class="quick-icon">🍽️</span>
+          <h3>Eats &amp; Treats</h3>
+          <p>4 must‑visit restaurants</p>
+        </a>
+        <a href="discover.html#spots" class="quick-card">
+          <span class="quick-icon">📚</span>
+          <h3>Hidden Spots</h3>
+          <p>Bookstores, parks, arcades</p>
+        </a>
+        <a href="events.html" class="quick-card">
+          <span class="quick-icon">📅</span>
+          <h3>Events</h3>
+          <p>Upcoming local happenings</p>
+        </a>
+        <a href="#quizCard" class="quick-card">
+          <span class="quick-icon">🧠</span>
+          <h3>Quiz</h3>
+          <p>Get a personal pick</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIAL / QUOTE ===== -->
+    <aside class="quote-block container" aria-label="Community testimonial">
+      <blockquote>
+        “Local Legends helped me find the best Rolex (chapati omelette) spot near the airport. I've lived in Entebbe 10 years!”
+        <cite>— Sarah N.</cite>
+      </blockquote>
+    </aside>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="page-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="logo-badge" aria-hidden="true">🗺️</span>
+        <span>Local Legends Guide</span>
+        <p class="footer-tagline">Hyperlocal culture map · Entebbe</p>
+      </div>
+      <div class="footer-links">
+        <a href="local-legend.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="events.html">Events</a>
+        <a href="references.html">References</a>
+      </div>
+      <div class="footer-meta">
+        <span>© 2026 · WDD 131</span>
+        <span>Built with 🧭</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/local-legend.js"></script>
+</body>
+</html>
