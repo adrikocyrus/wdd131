@@ -19,8 +19,8 @@
   <!-- ===== HEADER / NAV ===== -->
   <header class="site-header" role="banner">
     <div class="container nav-container">
-      <div class="logo-badge" role="img" aria-label="Local Legends logo - map pin with compass">
-        <span aria-hidden="true">🗺️</span>
+      <div class="logo-badge" role="img" aria-label="Local Legends logo">
+        <img src="images/logo.svg" alt="Local Legends Logo" style="height: 40px; width: auto;" />
         <span class="logo-text">Local Legends</span>
       </div>
       <nav class="main-nav" aria-label="Main navigation">
@@ -43,9 +43,27 @@
           <a href="discover.html" class="btn btn-primary">Explore the map</a>
         </div>
         <div class="hero-map" role="img" aria-label="Stylized map of Entebbe with pins">
-          <span aria-hidden="true">📍</span>
-          <span class="hero-map-label">interactive map</span>
+          <img src="images/hero-map.svg" alt="Interactive map of Entebbe" style="width: 100%; height: auto; max-height: 200px; object-fit: contain;" />
         </div>
+      </div>
+    </section>
+
+    <!-- ===== EMBEDDED GOOGLE MAP ===== -->
+    <section class="map-section container" aria-labelledby="map-heading">
+      <h2 id="map-heading">📍 Explore Entebbe</h2>
+      <p class="map-subtitle">Find your way around the city with our interactive map</p>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255758.09981434855!2d32.23616941858194!3d0.044826647165411665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d7f5c7e1c6b9b%3A0x8f7b1f0e9f9b2b8d!2sEntebbe%2C%20Uganda!5e0!3m2!1sen!2sus!4v1700000000000" 
+          width="100%" 
+          height="450" 
+          style="border:0; border-radius: 20px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Google Map of Entebbe, Uganda"
+          aria-label="Interactive map of Entebbe city showing landmarks and streets">
+        </iframe>
       </div>
     </section>
 
@@ -84,37 +102,52 @@
       <h2 id="featured-heading">⭐ Featured Spot of the Week</h2>
       <div class="featured-card">
         <div class="featured-image" role="img" aria-label="Entebbe Botanic Gardens">
-          <span aria-hidden="true">🌴</span>
+          <img src="https://picsum.photos/seed/entebbe-gardens/800/600" alt="Entebbe Botanic Gardens - Lush tropical gardens with ancient trees" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;" loading="lazy" />
         </div>
         <div class="featured-info">
           <h3>Entebbe Botanic Gardens</h3>
           <div class="stars" role="img" aria-label="5 star rating">⭐⭐⭐⭐⭐</div>
-          <p class="featured-desc">Lush lakeside gardens with centuries‑old trees, monkeys, and stunning views of Lake Victoria.</p>
+          <p class="featured-desc">Lush lakeside gardens with centuries‑old trees, monkeys, and stunning views of Lake Victoria. Established in 1898, these gardens are home to over 300 plant species.</p>
           <span class="tag">🥇 local legend</span>
+          <div class="spot-location">
+            <span>📍 Located on the shores of Lake Victoria</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== QUICK PICKS (grid) ===== -->
+    <!-- ===== QUICK PICKS (grid) with Images ===== -->
     <section class="quick-picks container" aria-labelledby="quick-heading">
       <h2 id="quick-heading">📌 Quick picks</h2>
       <div class="quick-grid">
         <a href="discover.html#eats" class="quick-card">
+          <div class="quick-image">
+            <img src="https://picsum.photos/seed/entebbe-eats/400/300" alt="Delicious local food in Entebbe" loading="lazy" />
+          </div>
           <span class="quick-icon">🍽️</span>
           <h3>Eats &amp; Treats</h3>
           <p>4 must‑visit restaurants</p>
         </a>
         <a href="discover.html#spots" class="quick-card">
+          <div class="quick-image">
+            <img src="https://picsum.photos/seed/entebbe-spots/400/300" alt="Hidden spots in Entebbe" loading="lazy" />
+          </div>
           <span class="quick-icon">📚</span>
           <h3>Hidden Spots</h3>
           <p>Bookstores, parks, arcades</p>
         </a>
         <a href="events.html" class="quick-card">
+          <div class="quick-image">
+            <img src="https://picsum.photos/seed/entebbe-events/400/300" alt="Events in Entebbe" loading="lazy" />
+          </div>
           <span class="quick-icon">📅</span>
           <h3>Events</h3>
           <p>Upcoming local happenings</p>
         </a>
         <a href="#quizCard" class="quick-card">
+          <div class="quick-image">
+            <img src="https://picsum.photos/seed/entebbe-quiz/400/300" alt="Take the quiz" loading="lazy" />
+          </div>
           <span class="quick-icon">🧠</span>
           <h3>Quiz</h3>
           <p>Get a personal pick</p>
@@ -135,7 +168,7 @@
   <footer class="page-footer" role="contentinfo">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <span class="logo-badge" aria-hidden="true">🗺️</span>
+        <img src="images/logo.svg" alt="Local Legends Logo" style="height: 30px; width: auto;" />
         <span>Local Legends Guide</span>
         <p class="footer-tagline">Hyperlocal culture map · Entebbe</p>
       </div>
@@ -152,6 +185,7 @@
     </div>
   </footer>
 
-  <script src="script/local-legend.js"></script>
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="scripts/local-legend.js"></script>
 </body>
 </html>

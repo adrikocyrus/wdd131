@@ -1251,3 +1251,397 @@ h3 {
   box-shadow: 0 15px 50px rgba(0,0,0,0.1);
   transform: translateY(-5px);
 }
+
+/* ===== MAP SECTION ===== */
+.map-section {
+  padding: 2rem 0 3rem;
+}
+
+.map-subtitle {
+  color: #2a5c5a;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.map-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.map-container:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+/* ===== SPOT IMAGES ===== */
+.spot-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  border: 1px solid #e8ddd0;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.spot-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+  border-color: #c8653a;
+}
+
+.spot-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: #f5ede1;
+}
+
+.spot-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.spot-card:hover .spot-image img {
+  transform: scale(1.05);
+}
+
+/* ===== QUICK PICKS WITH IMAGES ===== */
+.quick-card {
+  background: #fff;
+  border-radius: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #2d2a24;
+  border: 2px solid #e8ddd0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.quick-image {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background: #f5ede1;
+}
+
+.quick-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.quick-card:hover .quick-image img {
+  transform: scale(1.08);
+}
+
+.quick-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 45px rgba(0,0,0,0.08);
+  border-color: #c8653a;
+}
+
+.quick-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.quick-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: #c8653a;
+  font-size: 1.2rem;
+  margin: 0.25rem 0;
+}
+
+.quick-card p {
+  font-size: 0.9rem;
+  color: #5a554a;
+  padding-bottom: 1rem;
+}
+
+/* ===== SPOT LOCATION ===== */
+.spot-location {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #5a554a;
+  padding: 0.5rem;
+  background: #fbf6ed;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.featured-card:hover .spot-location {
+  background: #f5ede1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .map-container iframe {
+    height: 300px;
+  }
+  
+  .spot-image {
+    height: 160px;
+  }
+  
+  .quick-image {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container iframe {
+    height: 250px;
+  }
+  
+  .spot-image {
+    height: 140px;
+  }
+  
+  .quick-image {
+    height: 100px;
+  }
+  
+  .quick-icon {
+    font-size: 2rem;
+  }
+  
+  .quick-card h3 {
+    font-size: 1rem;
+  }
+}
+
+.events-section {
+  padding: 2rem 0 3rem;
+}
+
+.events-section h1 {
+  color: #c8653a;
+  font-size: 2.5rem;
+}
+
+.section-subtitle {
+  color: #2a5c5a;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* Event Card with Image */
+.event-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  border: 1px solid #e8ddd0;
+  border-top: 5px solid #c8653a;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+}
+
+/* Event Image */
+.event-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #f5ede1;
+  position: relative;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.05);
+}
+
+/* Event Content */
+.event-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-card h3 {
+  color: #2a5c5a;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.event-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
+.event-date {
+  background: #d4a23a;
+  padding: 0.25rem 1rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2d2a24;
+}
+
+.event-time {
+  background: #2a5c5a;
+  color: #fbf6ed;
+  padding: 0.25rem 1rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.event-price {
+  padding: 0.25rem 1rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.event-price.free {
+  background: #d4a23a;
+  color: #2d2a24;
+}
+
+.event-price.paid {
+  background: #c8653a;
+  color: #fbf6ed;
+}
+
+.event-card p {
+  color: #2d2a24;
+  margin: 0.5rem 0;
+  flex-grow: 1;
+  line-height: 1.7;
+}
+
+.event-location {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #5a554a;
+  padding: 0.5rem 0.75rem;
+  background: #fbf6ed;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.event-card:hover .event-location {
+  background: #f5ede1;
+}
+
+.event-location strong {
+  color: #2a5c5a;
+}
+
+/* ===== RESPONSIVE EVENTS ===== */
+@media (max-width: 992px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .event-image {
+    height: 180px;
+  }
+  
+  .event-content {
+    padding: 1.2rem;
+  }
+  
+  .events-section h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .event-image {
+    height: 200px;
+  }
+  
+  .event-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-image {
+    height: 160px;
+  }
+  
+  .event-content {
+    padding: 1rem;
+  }
+  
+  .event-icon {
+    font-size: 2rem;
+  }
+  
+  .event-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .event-meta {
+    gap: 0.3rem;
+  }
+  
+  .event-date,
+  .event-time,
+  .event-price {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.6rem;
+  }
+}
