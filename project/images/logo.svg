@@ -1,0 +1,107 @@
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD24C"/>
+      <stop offset="100%" stop-color="#FFA93E"/>
+    </linearGradient>
+    <linearGradient id="lakeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B7EA6"/>
+      <stop offset="100%" stop-color="#075A79"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E6B3A"/>
+      <stop offset="100%" stop-color="#0A4E2A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="300" cy="300" r="280" fill="url(#ringGrad)"/>
+  <circle cx="300" cy="300" r="264" fill="#FFFFFF"/>
+
+  <!-- Inner emblem circle -->
+  <circle cx="300" cy="300" r="248" fill="url(#skyGrad)"/>
+
+  <!-- Sun rays -->
+  <g stroke="#FFFFFF" stroke-width="4" opacity="0.55">
+    <line x1="300" y1="70" x2="300" y2="105"/>
+    <line x1="430" y1="115" x2="408" y2="142"/>
+    <line x1="170" y1="115" x2="192" y2="142"/>
+    <line x1="480" y1="220" x2="446" y2="232"/>
+    <line x1="120" y1="220" x2="154" y2="232"/>
+  </g>
+
+  <!-- Sun disc -->
+  <circle cx="300" cy="185" r="60" fill="#FFF4D6" opacity="0.9"/>
+
+  <!-- Lake Victoria water -->
+  <path d="M 52 340
+           C 52 340, 120 300, 220 340
+           C 300 372, 340 300, 430 335
+           C 490 358, 548 335, 548 335
+           L 548 552
+           A 248 248 0 0 1 52 552
+           Z" fill="url(#lakeGrad)"/>
+
+  <!-- Wave lines on lake -->
+  <g stroke="#BFE6F2" stroke-width="5" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M 90 400 C 150 380, 210 420, 270 400 C 330 380, 390 420, 450 400 C 480 392, 500 396, 512 400"/>
+    <path d="M 90 445 C 150 425, 210 465, 270 445 C 330 425, 390 465, 450 445 C 480 437, 500 441, 512 445"/>
+    <path d="M 90 490 C 150 470, 210 510, 270 490 C 330 470, 390 510, 450 490 C 480 482, 500 486, 512 490"/>
+  </g>
+
+  <!-- Palm-leaf foliage accents -->
+  <g fill="#0E6B3A">
+    <path d="M 120 335 C 95 300, 60 292, 40 300 C 60 315, 90 330, 120 335 Z"/>
+    <path d="M 120 335 C 105 295, 118 262, 138 248 C 140 285, 132 315, 120 335 Z"/>
+    <path d="M 480 335 C 505 300, 540 292, 560 300 C 540 315, 510 330, 480 335 Z"/>
+    <path d="M 480 335 C 495 295, 482 262, 462 248 C 460 285, 468 315, 480 335 Z"/>
+  </g>
+
+  <!-- Grey Crowned (Crested) Crane silhouette, centered over the sun -->
+  <g transform="translate(300,255) scale(1.05)" fill="#1F1F1F">
+    <!-- legs -->
+    <path d="M -6 55 L -14 100 L -8 100 L -2 60 Z"/>
+    <path d="M 10 55 L 20 100 L 14 100 L 4 60 Z"/>
+    <!-- body -->
+    <path d="M -40 30
+             C -55 5, -40 -30, -5 -35
+             C 20 -38, 45 -20, 42 5
+             C 40 25, 15 40, -10 40
+             C -22 40, -33 38, -40 30 Z"/>
+    <!-- wing detail -->
+    <path d="M -30 5 C -10 -5, 15 -3, 30 10 C 10 12, -10 14, -30 5 Z" fill="#F4F4F4"/>
+    <!-- neck + head -->
+    <path d="M 30 -18
+             C 45 -35, 55 -55, 48 -75
+             C 44 -85, 34 -92, 25 -90
+             C 33 -78, 34 -63, 24 -50
+             C 15 -38, 15 -22, 22 -8 Z"/>
+    <!-- beak -->
+    <path d="M 46 -78 L 66 -80 L 47 -70 Z" fill="#B8842E"/>
+    <!-- crest (golden crown of feathers) -->
+    <g stroke="#E0B23C" stroke-width="3" stroke-linecap="round">
+      <line x1="27" y1="-88" x2="20" y2="-104"/>
+      <line x1="30" y1="-90" x2="28" y2="-107"/>
+      <line x1="33" y1="-90" x2="36" y2="-106"/>
+      <line x1="36" y1="-87" x2="43" y2="-101"/>
+    </g>
+    <!-- red throat wattle -->
+    <circle cx="34" cy="-68" r="4" fill="#C23B3B"/>
+    <!-- tail feathers -->
+    <path d="M -40 25 C -60 20, -75 8, -80 -8 C -65 -2, -50 8, -38 20 Z" fill="#E9E9E9"/>
+  </g>
+
+  <!-- Curved banner text -->
+  <defs>
+    <path id="topArc" d="M 80 300 A 220 220 0 0 1 520 300"/>
+    <path id="bottomArc" d="M 110 300 A 190 190 0 0 0 490 300"/>
+  </defs>
+
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#0A4E2A" letter-spacing="6">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">ENTEBBE</textPath>
+  </text>
+
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="600" fill="#FFFFFF" letter-spacing="5">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">CITY • UGANDA</textPath>
+  </text>
+</svg>

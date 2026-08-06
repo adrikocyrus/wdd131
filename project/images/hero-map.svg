@@ -1,0 +1,217 @@
+<svg viewBox="0 0 1000 760" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="lakeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E8FB5"/>
+      <stop offset="100%" stop-color="#0E5F82"/>
+    </linearGradient>
+    <linearGradient id="landGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EDE6D3"/>
+      <stop offset="100%" stop-color="#E0D6B8"/>
+    </linearGradient>
+    <radialGradient id="greenPatch" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#8CC46A"/>
+      <stop offset="100%" stop-color="#6FA84F"/>
+    </radialGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- ===================== BACKGROUND / WATER ===================== -->
+  <rect x="0" y="0" width="1000" height="760" fill="url(#lakeGrad)"/>
+
+  <!-- subtle wave texture on the lake -->
+  <g stroke="#BFE6F2" stroke-width="2" opacity="0.18" fill="none">
+    <path d="M0,80 C 100,70 200,90 300,80 C 400,70 500,90 600,80 C 700,70 800,90 900,80 C 950,75 1000,80 1000,80"/>
+    <path d="M0,160 C 100,150 200,170 300,160 C 400,150 500,170 600,160 C 700,150 800,170 900,160 C 950,155 1000,160 1000,160"/>
+    <path d="M0,690 C 100,680 200,700 300,690 C 400,680 500,700 600,690 C 700,680 800,700 900,690 C 950,685 1000,690 1000,690"/>
+  </g>
+  <text x="760" y="120" fill="#DFF3FA" font-size="26" font-style="italic" opacity="0.85">Lake Victoria</text>
+
+  <!-- Ngamba Island (offshore) -->
+  <ellipse cx="880" cy="430" rx="34" ry="20" fill="url(#greenPatch)" filter="url(#softShadow)"/>
+
+  <!-- ===================== ENTEBBE PENINSULA (LANDMASS) ===================== -->
+  <path d="M 300 60
+           L 640 60
+           C 700 70, 740 110, 745 170
+           C 750 240, 700 260, 690 320
+           C 680 400, 640 430, 600 470
+           C 560 520, 540 560, 520 610
+           C 505 645, 470 660, 440 650
+           C 400 636, 400 600, 385 560
+           C 365 505, 320 490, 290 450
+           C 255 405, 250 350, 240 300
+           C 228 240, 235 170, 260 120
+           C 272 95, 285 75, 300 60 Z"
+        fill="url(#landGrad)" stroke="#B9AC81" stroke-width="3"/>
+
+  <!-- green belt: botanical gardens area -->
+  <ellipse cx="470" cy="560" rx="90" ry="55" fill="url(#greenPatch)" opacity="0.9"/>
+  <!-- green belt: airport surroundings / open land -->
+  <ellipse cx="620" cy="230" rx="70" ry="55" fill="#DDD2A0" opacity="0.6"/>
+
+  <!-- ===================== ROADS ===================== -->
+  <!-- Kampala-Entebbe Expressway entering from the north -->
+  <path d="M 470 0 L 470 60 C 460 110, 440 160, 430 220 C 420 300, 440 360, 460 420"
+        fill="none" stroke="#F2C230" stroke-width="9" stroke-linecap="round"/>
+  <path d="M 470 0 L 470 60 C 460 110, 440 160, 430 220 C 420 300, 440 360, 460 420"
+        fill="none" stroke="#8A5E00" stroke-width="9" stroke-dasharray="2 10" opacity="0.35"/>
+
+  <!-- Circular Road loop around the town core -->
+  <ellipse cx="470" cy="470" rx="150" ry="120" fill="none" stroke="#F2C230" stroke-width="6"/>
+
+  <!-- spur road to airport -->
+  <path d="M 470 420 C 540 400, 590 340, 615 260" fill="none" stroke="#F2C230" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- spur road to State House / Golf Club (west side) -->
+  <path d="M 370 440 C 330 430, 300 410, 285 370" fill="none" stroke="#F2C230" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- ===================== LEGEND / TITLE PANEL ===================== -->
+  <g>
+    <rect x="16" y="16" width="230" height="70" rx="10" fill="#0A4E2A" opacity="0.92"/>
+    <text x="30" y="44" fill="#FFFFFF" font-size="20" font-weight="700">ENTEBBE CITY</text>
+    <text x="30" y="65" fill="#DCEFDD" font-size="12">Click a marker to learn more</text>
+  </g>
+
+  <!-- ===================== INFO PANEL (updated by JS) ===================== -->
+  <g id="infoPanel" transform="translate(16,560)">
+    <rect id="infoBg" x="0" y="0" width="270" height="170" rx="12" fill="#FFFFFF" stroke="#0A4E2A" stroke-width="2" filter="url(#softShadow)"/>
+    <text id="infoTitle" x="16" y="34" font-size="19" font-weight="700" fill="#0A4E2A">Welcome to Entebbe</text>
+    <text id="infoBody" x="16" y="0" font-size="13" fill="#333333"></text>
+  </g>
+
+  <!-- ===================== MARKERS ===================== -->
+  <g id="markers" font-size="12" fill="#0A4E2A" font-weight="600">
+
+    <!-- Entebbe International Airport -->
+    <g class="marker" data-name="Entebbe International Airport"
+       data-info="Uganda's main international gateway, on the peninsula's eastern shore. Opened in 1929 and expanded through the decades, it is East Africa's busy air-transport hub.">
+      <circle cx="640" cy="220" r="14" fill="#C23B3B" filter="url(#softShadow)"/>
+      <path d="M 634 220 l 12 0 M 640 214 l 0 12 M 636 216 l 8 8 M 644 216 l -8 8" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="658" y="216">Entebbe Int'l</text>
+      <text x="658" y="230">Airport</text>
+    </g>
+
+    <!-- National Botanical Gardens -->
+    <g class="marker" data-name="National Botanical Gardens"
+       data-info="Established in 1898 on the northern shore of Lake Victoria. 40.7 hectares of tropical flora, birdlife and colobus monkeys — once a filming site for a 1950s Tarzan movie.">
+      <circle cx="470" cy="565" r="14" fill="#0E6B3A" filter="url(#softShadow)"/>
+      <path d="M 470 572 C 465 560, 475 560, 470 550" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+      <text x="488" y="561">Botanical</text>
+      <text x="488" y="575">Gardens</text>
+    </g>
+
+    <!-- UWEC / Entebbe Zoo -->
+    <g class="marker" data-name="Uganda Wildlife Education Centre (Entebbe Zoo)"
+       data-info="Founded in 1950 as a sanctuary for injured and confiscated wildlife. Home to lions, giraffes, chimpanzees and more, set on the lakeshore near the town centre.">
+      <circle cx="415" cy="610" r="13" fill="#B8842E" filter="url(#softShadow)"/>
+      <text x="340" y="606">UWEC</text>
+      <text x="330" y="620">(Entebbe Zoo)</text>
+    </g>
+
+    <!-- State House -->
+    <g class="marker" data-name="State House, Entebbe"
+       data-info="The official residence and workplace of the President of Uganda, making Entebbe the country's chief seat of executive power.">
+      <circle cx="330" cy="330" r="13" fill="#5A3E9B" filter="url(#softShadow)"/>
+      <text x="250" y="325">State House</text>
+    </g>
+
+    <!-- Town Centre / Circular Road (Independence Tree, St John's Church, Stanbic) -->
+    <g class="marker" data-name="Town Centre &amp; Circular Road"
+       data-info="The historic core of Entebbe. Circular Road passes the Independence Tree, St John's Church, the 1950 Stanbic Bank building and colonial-era architecture.">
+      <circle cx="470" cy="470" r="13" fill="#0B7EA6" filter="url(#softShadow)"/>
+      <text x="488" y="466">Town Centre</text>
+      <text x="488" y="480">(Circular Rd)</text>
+    </g>
+
+    <!-- Entebbe Golf Club -->
+    <g class="marker" data-name="Entebbe Golf Club"
+       data-info="A historic golf course dating to the colonial era, one of the city's oldest sporting institutions, near Circular Road.">
+      <circle cx="300" cy="400" r="11" fill="#3E8E3E" filter="url(#softShadow)"/>
+      <text x="220" y="396">Golf Club</text>
+    </g>
+
+    <!-- Lido / Aero Beach -->
+    <g class="marker" data-name="Lido &amp; Aero Beach"
+       data-info="Popular lakeside beaches near the airport, favourite spots for relaxing by Lake Victoria, swimming and watching the sunset.">
+      <circle cx="590" cy="300" r="11" fill="#1E8FB5" filter="url(#softShadow)"/>
+      <text x="605" y="305">Lido Beach</text>
+    </g>
+
+    <!-- Ferry / port jetty -->
+    <g class="marker" data-name="Entebbe Ferry &amp; Port"
+       data-info="Steamship and ferry connections across Lake Victoria to the Ssese Islands and neighbouring countries, reflecting Entebbe's role as a transport crossroads.">
+      <circle cx="540" cy="600" r="11" fill="#0B7EA6" filter="url(#softShadow)"/>
+      <text x="555" y="605">Ferry / Port</text>
+    </g>
+
+    <!-- Ngamba Island Chimpanzee Sanctuary -->
+    <g class="marker" data-name="Ngamba Island Chimpanzee Sanctuary"
+       data-info="A boat-trip destination on Lake Victoria (about 23km offshore, shown schematically here) where visitors meet rescued and rehabilitated chimpanzees.">
+      <circle cx="880" cy="430" r="11" fill="#8B5A2B" filter="url(#softShadow)"/>
+      <text x="828" y="460">Ngamba Island</text>
+    </g>
+
+  </g>
+
+  <!-- compass -->
+  <g transform="translate(940,60)">
+    <circle r="26" fill="#FFFFFF" opacity="0.85"/>
+    <path d="M0,-20 L6,4 L0,-4 L-6,4 Z" fill="#C23B3B"/>
+    <text x="0" y="34" font-size="13" fill="#FFFFFF" text-anchor="middle">N</text>
+  </g>
+
+  <script><![CDATA[
+    var markers = document.querySelectorAll('.marker');
+    var titleEl = document.getElementById('infoTitle');
+    var bodyEl = document.getElementById('infoBody');
+
+    function wrapText(el, text, width, lineHeight) {
+      while (el.firstChild) el.removeChild(el.firstChild);
+      var words = text.split(' ');
+      var line = '';
+      var y = 20;
+      var tspan = null;
+      for (var i = 0; i < words.length; i++) {
+        var test = line + words[i] + ' ';
+        if (test.length > width && line.length > 0) {
+          tspan = document.createElementNS('http://www.w3.org/2000/svg','tspan');
+          tspan.setAttribute('x', 16);
+          tspan.setAttribute('dy', line === '' ? 0 : lineHeight);
+          tspan.textContent = line.trim();
+          el.appendChild(tspan);
+          line = words[i] + ' ';
+        } else {
+          line = test;
+        }
+      }
+      tspan = document.createElementNS('http://www.w3.org/2000/svg','tspan');
+      tspan.setAttribute('x', 16);
+      tspan.setAttribute('dy', lineHeight);
+      tspan.textContent = line.trim();
+      el.appendChild(tspan);
+    }
+
+    markers.forEach(function(m) {
+      var circle = m.querySelector('circle');
+      m.style.cursor = 'pointer';
+
+      m.addEventListener('mouseenter', function() {
+        circle.setAttribute('r', parseFloat(circle.getAttribute('r')) + 3);
+      });
+      m.addEventListener('mouseleave', function() {
+        circle.setAttribute('r', parseFloat(circle.getAttribute('r')) - 3);
+      });
+      m.addEventListener('click', function() {
+        var name = m.getAttribute('data-name');
+        var info = m.getAttribute('data-info');
+        titleEl.textContent = name;
+        wrapText(bodyEl, info, 38, 16);
+        var bg = document.getElementById('infoBg');
+        var neededHeight = 50 + (bodyEl.children.length * 16) + 10;
+        bg.setAttribute('height', Math.max(120, neededHeight));
+      });
+    });
+  ]]></script>
+</svg>
