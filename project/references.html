@@ -12,58 +12,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style/local-legend.css" />
-  <style>
-    .references-content {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-      border: 1px solid #e8ddd0;
-      margin: 2rem 0;
-    }
-    .references-content h2 {
-      color: #c8653a;
-      border-bottom: 3px solid #d4a23a;
-      padding-bottom: 0.75rem;
-      margin-bottom: 1.5rem;
-    }
-    .references-content h3 {
-      color: #2a5c5a;
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-    }
-    .references-content ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .references-content li {
-      padding: 0.5rem 0;
-      border-bottom: 1px solid #f0ebe5;
-      line-height: 1.6;
-    }
-    .references-content li:last-child {
-      border-bottom: none;
-    }
-    .references-content .source-icon {
-      font-size: 1.2rem;
-      margin-right: 0.5rem;
-    }
-    .references-content .reference-link {
-      color: #c8653a;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .references-content .reference-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/local-legend.css" />
+   <script src="scripts/local-legend.js"></script>
 </head>
 <body>
+  <!-- ===== HEADER / NAV ===== -->
   <header class="site-header" role="banner">
     <div class="container nav-container">
       <div class="logo-badge" role="img" aria-label="Local Legends logo">
-        <span aria-hidden="true">🗺️</span>
+        <img src="images/logo.svg" alt="Local Legends Logo" style="height: 40px; width: auto;" />
         <span class="logo-text">Local Legends</span>
       </div>
       <nav class="main-nav" aria-label="Main navigation">
@@ -192,10 +150,11 @@
     </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="page-footer" role="contentinfo">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <span class="logo-badge" aria-hidden="true">🗺️</span>
+        <img src="images/logo.svg" alt="Local Legends Logo" style="height: 30px; width: auto;" />
         <span>Local Legends Guide</span>
         <p class="footer-tagline">Hyperlocal culture map · Entebbe</p>
       </div>
@@ -211,7 +170,5 @@
       </div>
     </div>
   </footer>
-
-  <script src="script/local-legend.js"></script>
 </body>
 </html>
