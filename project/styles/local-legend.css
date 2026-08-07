@@ -1040,6 +1040,21 @@ h3 {
 /* ============================================================
    REFERENCES PAGE
    ============================================================ */
+.references-page {
+  padding: 2rem 0;
+}
+
+.references-heading {
+  color: #c8653a;
+  font-size: 2.5rem;
+}
+
+.references-subtitle {
+  color: #2a5c5a;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
 .references-content {
   background: linear-gradient(135deg, #fff, #fbf6ed);
   padding: 2.5rem;
@@ -1102,6 +1117,35 @@ h3 {
 .references-content .reference-link:hover {
   color: #b05a32;
   text-decoration: underline;
+}
+
+.references-content .reference-title {
+  font-weight: 600;
+}
+
+.references-content .reference-description {
+  display: block;
+  font-size: 0.9rem;
+  color: #5a554a;
+  margin-top: 0.25rem;
+}
+
+.references-footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0ebe5;
+}
+
+.references-footer p {
+  color: #2a5c5a;
+  font-style: italic;
+}
+
+.references-footer small {
+  color: #5a554a;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  display: block;
 }
 
 /* ============================================================
